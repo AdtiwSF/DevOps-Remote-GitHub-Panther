@@ -1,0 +1,17 @@
+name: GitHub Actions Demo
+run-name: Adesh is running the GitHub Actions
+on: [push,pull_request]
+jobs:
+  build-and-deploy: ## Name of the job
+    runs-on: ubuntu-latest ## GitHub Hosted [Self Hosted]
+      ## Example-Develop an Apex trigger to count the total no of contacts under an account [job]
+      ## Example-Deploy all the apex triggers and classes developed as part of US-8834 [Job]
+    steps:
+     - run: echo "This is my first job"
+       name: "Fist Job Message!!"
+      
+  clean-up:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "This is second job"
+        name: "Second Message" 
